@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  rcmapptest:
+    image: rcmappv1:v1
+    build: .
+    container_name: rcmc1
+    ports:
+    - "443:80"
+    restart: always
